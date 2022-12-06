@@ -1,0 +1,18 @@
+<h1>Contact</h1>
+        <p>Ini adalah contact</p>
+        <% if (cont.length < 1) { %>
+        <h3><b>error!!</b> data is empty</h3>
+        <% } else { %>
+        <table border="1px solid">
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+            </tr>
+            <% cont.forEach(elm => { %>
+            <tr>
+                <td><%= elm.name %> </td>
+                <td><%= elm.email %> </td>
+            </tr>
+            <% }) %>
+            <%} %>
+        </table>
